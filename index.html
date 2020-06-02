@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="action" onclick="actionToogle()">
+        <span>+</span>
+        <ul>
+            <li><img src="1.svg"> Share on Facebook </li>
+            <li><img src="2.svg"> Share on Twitter </li>
+            <li><img src="3.svg"> Share on Instagram </li>
+            <li><img src="4.svg"> Share on Pinterest </li>
+            <li><img src="5.svg"> Share on Likendin </li>
+        </ul>
+    </div>
+
+    <script>
+
+        function actionToogle() {
+            var action = document.querySelector('.action');
+            action.classList.toggle('active');
+        }
+
+    </script>
+
+</body>
+
+</html>
